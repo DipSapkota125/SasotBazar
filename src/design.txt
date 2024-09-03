@@ -1,0 +1,484 @@
+    <header className="font-sans flex items-center justify-evenly p-4 bg-white-200">
+      <div className="flex items-center">
+        <img src={Logo} alt="Logo" className="h-12 w-full pr-2" />
+      </div>
+      <div className="flex items-center justify-center w-2/5 relative">
+        <input
+          type="text"
+          placeholder="I'm searching for"
+          className="text-gray border border-gray-300 w-full py-2 px-2 pr-8 focus:outline-none"
+        />
+        <button className="absolute top-0 right-0 flex items-center justify-center h-full w-20 bg-orange-500">
+          <FiSearch className="h-4 w-4 text-white" />
+        </button>
+      </div>
+      <div className="flex items-center ml-2">
+        <div className="flex items-center">
+          <FiHeart className="h-6 w-6 text-gray-700" />
+          <span className="ml-1 text-gray-500">Wishlist</span>
+        </div>
+        <div className="ml-4">
+          <button className="relative">
+            <FiShoppingCart className="h-6 w-6 text-gray-700" />
+            <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-orange-500 rounded-full">
+              0
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    ########Footer
+   <footer className="font-poppins bg-gray-200 py-10">
+      <div className="container mx-auto flex flex-wrap justify-between">
+        {/* Inside Deals and Offers */}
+        <div className="w-full md:w-1/4 px-4 mb-8">
+          <h2 className="text-gray-700 text-lg font-semibold mb-4">
+            Inside Deals and Offers !!
+          </h2>
+          <div className="space-y-4">
+            <img
+              src={GooglePay}
+              alt="Google Pay"
+              className="h-12 inline rounded-md shadow-md"
+            />
+            <img
+              src={AppPayImg}
+              alt="App Store"
+              className="h-12 inline rounded-md shadow-md"
+            />
+          </div>
+        </div>
+
+        {/* Links */}
+        <div className="w-full md:w-1/4 px-4 mb-8">
+          <h2 className="text-gray-700 text-lg font-semibold mb-4">Links</h2>
+          <ul className="text-gray-600 space-y-2">
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Blog</li>
+            <li>FAQ'S</li>
+            <li>Hiring</li>
+          </ul>
+        </div>
+
+        {/* Policies */}
+        <div className="w-full md:w-1/4 px-4 mb-8">
+          <h2 className="text-gray-700 text-lg font-semibold mb-4">Policies</h2>
+          <ul className="text-gray-600 space-y-2">
+            <li>Terms and Conditions</li>
+            <li>Return Policy</li>
+            <li>Data Policy</li>
+            <li>Refund Policy</li>
+            <li>G-Cash Policy</li>
+          </ul>
+        </div>
+
+        {/* Contact Us */}
+        <div className="w-full md:w-1/4 px-4 mb-8">
+          <h2 className="text-gray-700 text-lg font-semibold mb-4">
+            Contact Us
+          </h2>
+          <ul className="text-gray-600 space-y-4">
+            <li className="flex items-center">
+              <FaPhone className="mr-2" />
+              <span>123-456-7890 / 9861315260</span>
+            </li>
+            <li className="flex items-center">
+              <FaEnvelope className="mr-2" />
+              <span>info@example.com</span>
+            </li>
+            <li className="flex items-center space-x-4">
+              <SiFacebook size={24} className="text-blue-500" />
+              <FaTwitter size={24} className="text-blue-700" />
+              <SiInstagram size={24} className="text-red-400" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  
+  //Student Top header
+      <div className="font-poppins pt-1 border-b p-2 px-4 flex justify-between items-center">
+    
+      <div className="flex items-center space-x-2">
+        <FaViber className="text-blue-500" />
+        <span className="text-sm text-gray-700">Customer Support</span>
+      </div>
+
+ 
+      <div className="flex items-center space-x-2">
+        <a href="#" className="text-sm text-gray-700 hover:text-blue-500">
+          Login
+        </a>
+        <span className="text-sm text-gray-700">/</span>
+        <a href="#" className="text-sm text-gray-700 hover:text-blue-500">
+          Register
+        </a>
+      </div>
+    </div>
+
+    //TopHeader(Ranjwet)
+     <div className="font-poppins headerTop text-secondary pt-1 border-b border-gray py-1">
+        <div className="container mx-auto px-4 lg:px-10">
+          <div className="flex items-center justify-between">
+            <div className="text-sm flex items-center space-x-2">
+              <FcCustomerSupport className="text-red-500 text-lg lg:text-2xl" />
+              <FaViber className="text-blue-500 text-lg lg:text-2xl" />
+              <FaWhatsapp className="text-green-500 text-lg lg:text-2xl" />
+              <span className="text-black-600">01-56789/9861315260</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <button className="py-1 px-2 text-sm text-secondary border-secondary">
+                Himalayan Rewards
+              </button>
+              <button className="py-1 px-2 text-sm text-secondary border-secondary">
+                Sell your Product
+              </button>
+
+              <div className="flex items-center space-x-2">
+                {/* Toggle Code */}
+                <label className="relative inline-flex items-center mr-5 cursor-pointer">
+                  <input type="checkbox" value="" className="sr-only peer" />
+                  <div className="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-orange-500"></div>
+                </label>
+
+                <span className="ml-2">
+                  <FcIphone size={20} />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      #######(product Card)
+          <div className="font-sans bg-[#fff] flex flex-col items-center p-4 space-y-2">
+        <Link to={`/product/details/${product._id}`}>
+          <img
+            className="w-32 h-32 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 my-4 mt-2"
+            src={product.productImg.url}
+            alt={product.productName}
+          />
+          <h2 className="text-secondary text-gray-500 my-2">
+            {product.productName}
+          </h2>
+          <span className="text-gray-700 font-bold">Rs.{product.price}</span>
+        </Link>
+      </div>
+
+      //Page not found Styling
+           <div className="flex flex-col items-center justify-center h-screen font-poppins">
+        <h1 className="text-center text-3xl text-gray-700 mb-4">
+          OOP's Page not Found!
+        </h1>
+        <img src={NotFoundImage} alt="not foundImg" className="max-w-full" />
+        <Link
+          to="/"
+          className="bg-orange-500 hover:bg-orange-600 text-white py-3 px-4 rounded-sm no-underline"
+        >
+          Back to Home
+        </Link>
+      </div>
+
+      #################(Common Pages)
+       <div className="font-poppins px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="grid gap-8 lg:grid-cols-2">
+          <div>
+            <h2 className="mb-4 text-3xl font-bold leading-none sm:text-4xl">
+              <span className="mr-2">About</span>
+              <span className="text-orange-500">Sasto Bazar</span>
+            </h2>
+
+            <p className="mb-4 text-gray-700">
+              We bring to you an online service where you can purchase and order
+              your favorite cakes - creating a unique bakery shopping experience
+              without having to hop from one shop or website to another looking
+              for your desired cake. We ambitiously claim to deliver 100% fresh
+              cakes at your doorstep with complete ease and care on the same day
+              or as planned.
+            </p>
+            <>
+              <p className="mb-4 text-gray-700">
+                Our online cake delivery in Kathmandu, Bhaktapur, and Lalitpur
+                allows for cross-country purchases enabling you to send
+                delicious cakes to your parents, relatives, or friends on
+                various occasions from any part of the world. We are here to
+                create some unforgettable memories and some undying emotions by
+                helping you to send cake to your beloved ones online. We invite
+                you to celebrate your special occasions with your favorite cakes
+                from oho! cake.
+              </p>
+            </>
+            <Link
+              to=""
+              className="inline-block py-2 px-4 text-white bg-orange-500 hover:bg-orange-600 rounded-lg no-underline"
+            >
+              Learn more
+            </Link>
+          </div>
+          <div className="flex justify-center">
+            <img
+              src={AboutImg}
+              alt="SastoBazar Bazar"
+              className="w-full h-full max-w-md object-contain animate-moveUpDown"
+            />
+          </div>
+        </div>
+      </div>
+
+      <CommonPages
+        title="Information"
+        subTitle="MoreOver"
+        desc="We bring to you an online cake delivery service where you can
+              purchase and order your favorite cakes - creating a unique bakery
+              shopping experience without having to hop from one shop or website
+              to another looking for your desired cake. We ambitiously claim to
+              deliver 100% fresh cakes at your doorstep with complete ease and
+              care on the same day or as planned."
+        desc1=" Our online cake delivery in Kathmandu, Bhaktapur, and Lalitpur
+                allows for cross-country purchases enabling you to send
+                delicious cakes to your parents, relatives, or friends on
+                various occasions from any part of the world. We are here to
+                create some unforgettable memories and some undying emotions by
+                helping you to send cake to your beloved ones online. We invite
+                you to celebrate your special occasions with your favorite cakes
+                from oho! cake."
+        btnAbout="Explore Our services"
+        imgAbout={moreInfoImg}
+        visit=""
+
+
+        //DetailsInfo
+        <div className="bg-[#F8F8FA] my-4 py-1">
+      <p className="my-5 px-4 font-bold text-2xl text-gray-800">
+        Born in Crisis, Raised in Crisis:
+      </p>
+      <p className="my-4 px-4">
+        Not with a long-standing history, we are a Start-up. Following the
+        crisis, we brought new possibilities to life.
+      </p>
+
+      <p className="my-4 px-4">
+        <span className="text-lg text-gray-600 font-semibold">
+          An emerging online shopping platform led by Nepali Entrepreneurs.
+        </span>{" "}
+        Aiming to build a Nepali Global Brand, we promote domestic Nepali
+        products across the Globe.
+      </p>
+
+      <p className="px-4">
+        We pledge to disintermediate the monopoly of mediators and existing
+        e-commerce industrial trends. Envisioning to uplift the local business
+        enthusiasts and the overall Economy of Nepal while simultaneously
+        creating job opportunities nationwide.
+      </p>
+
+      <h2 className="text-lg text-gray-600 font-semibold my-4 px-4">
+        Who Are We?
+      </h2>
+
+      <p className="px-4">
+        Leaders are those who can turn challenges into prospects. So is Oho!. We
+        are an emerging e-commerce platform in Nepal, launched to seize the
+        prospects in the barrier. It was on April 2023 - the 3rd day after the
+        lockdown imposed by the government of Nepal.
+      </p>
+
+      <p className="px-4">
+        Our technology-enabled e-commerce site has reformed the e-commerce
+        industry in Nepal, offering a wide range of products from groceries to
+        automobiles, clothing to accessories, and more. We came into being not
+        just to sell, but to bring reform to the culture of e-commerce in Nepal.
+      </p>
+
+      <h2 className="text-lg text-gray-600 font-semibold my-4 px-4">
+        What do we do?
+      </h2>
+
+      <p className="my-4 px-4 font-bold text-2xl text-gray-800">
+        Touching Lives Everyday!
+      </p>
+
+      <p className="px-4">
+        We assist you in meeting your day-to-day or special occasion needs.
+        Whether it's groceries, clothes, accessories, or vehicles, we have
+        everything you need. Himalayan Bazar Marketplace connects buyers with
+        vendors to get the finest of what they want.
+      </p>
+
+      <p className="px-4">
+        With limitless possibilities in the eCommerce industry, we ensure to
+        provide our product as standard. Eliminating intermediation so that our
+        product price remains the same as buying physically. This way, you won't
+        feel any hiccups while buying from us. For this, we don’t take any
+        commission and have arranged free delivery within Kathmandu.
+      </p>
+
+      <h2 className="text-lg text-gray-600 font-semibold my-4 px-4">
+        What do we offer?
+      </h2>
+
+      <p className="px-4">
+        Being an e-commerce company, we deal with diverse product categories.
+        Our products are labeled as fashion, mobile accessories, electronics,
+        home and decor, sports, automobiles, groceries, books, appliances,
+        hygiene, G-Bar (alcoholic beverages), and for kids.
+      </p>
+
+      <h2 className="text-lg text-gray-600 font-semibold my-4 px-4">
+        How do we do it?
+      </h2>
+
+      <p className="px-4">
+        Himalayan Bazar Nepal has been able to keep up with the expectations of
+        the buyers. It is the result of our creative and dedicated team.
+      </p>
+
+      <p className="px-4">
+        We assure that our buyers get what they see at the best quality and
+        price. We deliver the order within 2-24 hours of order placement without
+        intermediaries. Also, pay vendors within 3-5 days, which sometimes takes
+        months for others.
+      </p>
+
+      <p className="px-4">
+        Every work comes with responsibilities. At Himalayan Bazar, we take our
+        responsibilities as principles. To execute our responsibilities, every
+        department commits to excellence. From CRM to logistics, our delivery
+        represents us.
+      </p>
+
+      <h2 className="text-lg text-gray-600 font-semibold my-4 px-4">
+        What makes us distinct?
+      </h2>
+      <p className="px-4">
+        Himalayan Bazar is not just any other e-commerce company; we are
+        game-changers in the industry. We have revolutionized how e-commerce
+        companies operate in Nepal by:
+      </p>
+      <ul className="px-4">
+        <li>
+          Delivering orders within 2-24 hours of order placement, contrary to
+          the culture of 3-4 business days.
+        </li>
+        <li>
+          Eliminating intermediaries in e-commerce to ensure that our product
+          prices remain the same as buying physically, without any commission.
+        </li>
+        <li>
+          Settling payments to vendors within 3-4 days, which sometimes take
+          months with other e-commerce companies.
+        </li>
+      </ul>
+      <p className="px-4">
+        We are risk-takers and believe in taking on challenges to turn them into
+        opportunities. Our ultimate goal is to become a global brand and create
+        job opportunities while promoting local enterprises. We understand that
+        vulnerability is a part of the process, but our commitment to excellence
+        is what keeps us going. We are proud to have remodeled the e-commerce
+        industry in Nepal,
+      </p>
+      <h2 className="text-xl px-4 text-gray-700 my-2">
+        {" "}
+        we are your shopping partner - Himalayan Bazar!
+      </h2>
+    </div>
+
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        
+            <div  className="border p-4 rounded-lg shadow-md">
+              <img
+                src=""
+                alt=""
+                className="w-full h-48 object-cover mb-4"
+              />
+              <h2 className="text-lg font-medium">""</h2>
+              <p className="text-gray-500">""</p>
+              <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                View Details
+              </button>
+            </div>
+        
+        </div>
+
+        w-full h-48 object-cover mb-4 transform transition-transform duration-500 hover:translate-y-[-10px] hover:scale-105
+
+
+        ###########(Product Details)
+          <div className="font-sans container mx-auto px-8 py-8 bg-gray-50">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="mb-4 bg-[#FFFFFF] border flex justify-center items-center">
+          {/* Left Side Image */}
+          <div className="relative max-w-md mx-auto overflow-hidden">
+            <img
+              src=""
+              alt=""
+              className="w-full h-auto rounded object-cover cursor-pointer transition-transform duration-300 hover:scale-105"
+            />
+            <div className="absolute inset-0 hidden md:flex justify-center items-center bg-black bg-opacity-10 rounded-md cursor-zoom-in">
+              <img
+                src=""
+                alt=""
+                className="w-full h-auto rounded-md"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="px-4">
+          <div>
+            {/* Right Side Content */}
+            <h2 className="text-2xl font-bold text-gray-700 mb-2">
+              title
+            </h2>
+
+            <div className="mb-4">
+              {/* Price */}
+              <span className="text-3xl text-orange-500 font-semibold">
+                Rs. 100
+              </span>
+              <hr className="border-b border-dotted w-3/5 border-gray-400 mt-2" />
+            </div>
+
+            {/* Quantity Control */}
+            <div className="flex items-center mt-3 text-gray-700">
+              <span className="mr-2">Qty:</span>
+              <div className="flex">
+                <button className="px-2 py-1 bg-gray-200 rounded-l">-</button>
+                <input
+                  type="text"
+                  className="w-12 px-2 py-1 text-center focus:outline-none bg-gray-100"
+                  min={1}
+                  defaultValue={1}
+                />
+                <button className="px-2 py-1 bg-gray-200 rounded-r">+</button>
+              </div>
+            </div>
+
+            <div className="mb-4">
+              {/* desc */}
+              <span className="text-base text-gray-700">
+                description
+              </span>
+              <hr className="border-b border-dotted w-3/5 border-gray-400 mt-2" />
+            </div>
+
+            <div className="mb-4 flex space-x-2">
+              {/* Buttons */}
+              <button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-64">
+                Add to Cart
+              </button>
+              <button className="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded w-64">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    https://fakestoreapi.com/products
+    https://httpbin.org/post
